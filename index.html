@@ -17,7 +17,7 @@
       </div>
     </div>
     <hr />
-    <h1 style="color: #a4a4a4">请录入图书信息</h1>
+    <h1>请录入图书信息</h1>
 
     <div class="container">
       <form class="form" autocomplete="off">
@@ -78,7 +78,22 @@
 
         <input type="submit" value="添加图书" />
       </form>
+
+      <div class="search">
+        <div class="form-item" id="searchBookName">
+          <input
+            type="text"
+            id="searchName"
+            name="searchName"
+            placeholder=" "
+            autocomplete="off"
+          />
+          <label for="searchName">请输入您要查找的图书名称</label>
+        </div>
+        <button class="btnSearch">搜索</button>
+      </div>
     </div>
+    <h1>图书信息列表</h1>
     <table>
       <thead>
         <tr>
@@ -92,7 +107,6 @@
       </thead>
       <tbody id="bookList"></tbody>
     </table>
-
     <script src="./script.js"></script>
   </body>
 </html>

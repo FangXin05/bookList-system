@@ -19,14 +19,18 @@ body {
 .header img {
   width: 300px;
   height: 60px;
+  padding-left: 25px;
 }
 .container {
+  display: flex;
+  flex-direction: column;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
 h1 {
   text-align: center;
+  color: #a4a4a4;
 }
 .form {
   display: grid;
@@ -35,13 +39,10 @@ h1 {
 }
 .form-item {
   position: relative;
-  position: relative;
-  display: flex; /* 添加：使用 flex 布局 */
-  justify-content: center; /* 添加：水平居中 */
-  align-items: center;
 }
 
 .form-item input {
+  width: 100%;
   box-sizing: border-box;
   height: 45px;
   border: 1px solid #d2d2d7;
@@ -61,10 +62,9 @@ h1 {
   background: white;
   padding: 0 4px;
   transition: all 0.2s ease;
-  pointer-events: none; /* 防止点不到input */
 }
 
-/* 🔥 聚焦 或 已输入 时 */
+/* 聚焦 或 已输入 时 */
 .form-item input:focus + label,
 .form-item input:not(:placeholder-shown) + label {
   top: 0;
@@ -89,7 +89,7 @@ input[type="submit"]:hover {
   font-weight: 700;
 }
 table {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 800px;
   border-collapse: collapse;
   color: #ffffff;
@@ -97,7 +97,6 @@ table {
 th {
   padding: 10px;
   background: #4996e4e4;
-
   font-size: 20px;
   font-weight: 400;
 }
@@ -111,9 +110,49 @@ td {
   text-align: center;
   font-size: 16px;
 }
+td a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+td a.edit {
+  color: #0071e3;
+}
+td a.del {
+  color: #ff3b30;
+}
+td a:hover {
+  text-decoration: underline;
+}
 tbody tr {
   background: #fff;
 }
 tbody tr:hover {
   background: #e1ecf8;
+}
+
+/* #searchBookName {
+  width: 400px;
+}
+#searchBookName input {
+  width: 300px;
+}  */
+.search {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.search .form-item {
+  grid-column: span 2;
+}
+.btnSearch {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+}
+.btnSearch:hover {
+  background-color: #4996e4e4;
+  color: #ffffff;
+  font-weight: 700;
 }
