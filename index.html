@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>book</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="./images/1 (2).png" />
+      <div class="text">
+        <span>图书录入系统</span>
+        <div style="font-size: 12px">
+          欢迎来到河南师范大学图书馆图书录入系统！
+        </div>
+      </div>
+    </div>
+    <hr />
+    <h1 style="color: #a4a4a4">请录入图书信息</h1>
+
+    <div class="container">
+      <form class="form" autocomplete="off">
+        <div class="form-item">
+          <input
+            type="text"
+            id="bookName"
+            name="bookName"
+            placeholder=" "
+            required
+          />
+          <label for="bookName">图书名称</label>
+        </div>
+
+        <div class="form-item">
+          <input
+            type="text"
+            id="author"
+            name="author"
+            placeholder=" "
+            required
+          />
+          <label for="author">作者</label>
+        </div>
+
+        <div class="form-item">
+          <input
+            type="text"
+            id="publisher"
+            name="publisher"
+            placeholder=" "
+            required
+          />
+          <label for="publisher">出版社</label>
+        </div>
+
+        <div class="form-item">
+          <input
+            type="number"
+            id="publicationYear"
+            name="publicationYear"
+            placeholder=" "
+            required
+          />
+          <label for="publicationYear">出版年份</label>
+        </div>
+
+        <div class="form-item">
+          <input
+            type="number"
+            id="price"
+            name="price"
+            placeholder=" "
+            required
+          />
+          <label for="price">价格</label>
+        </div>
+
+        <input type="submit" value="添加图书" />
+      </form>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>图书名称</th>
+          <th>作者</th>
+          <th>出版社</th>
+          <th>出版年份</th>
+          <th>价格</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody id="bookList"></tbody>
+    </table>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
