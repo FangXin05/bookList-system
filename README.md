@@ -17,13 +17,6 @@
 - JavaScript (ES6)
 - LocalStorage
 
-## 项目结构
-book-management-system{
-index.html # 主页面结构
-style.css # 样式文件
- script.js # 功能逻辑（数据存储、渲染、删除）
- README.md # 项目说明文档
-}
 ## 使用说明
 
 1. 克隆或下载本仓库到本地。
@@ -33,9 +26,6 @@ style.css # 样式文件
 5. 点击表格中“删除”按钮可移除对应图书。
 6. 所有数据会自动保存到浏览器的 `localStorage` 中，刷新页面后数据不会丢失。
 
-## 界面预览
-
-（您可以在 README 中添加截图，提升可读性）
 
 ## 注意事项
 
@@ -44,7 +34,7 @@ style.css # 样式文件
 - 每个输入框均设置了 `required` 属性，提交时会进行非空校验。
 - 输入框的浮动标签效果依赖 `placeholder=" "` 和 `:placeholder-shown` 伪类，请勿移除。
 
-## 后续优化建议
+## 后续优化
 
 - 增加图书编辑功能
 - 支持按条件搜索和筛选
