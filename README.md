@@ -18,13 +18,12 @@
 - LocalStorage
 
 ## 项目结构
-book-management-system/
-│
-├── index.html # 主页面结构
-├── style.css # 样式文件
-├── script.js # 功能逻辑（数据存储、渲染、删除）
-└── README.md # 项目说明文档
-
+book-management-system{
+index.html # 主页面结构
+style.css # 样式文件
+ script.js # 功能逻辑（数据存储、渲染、删除）
+ README.md # 项目说明文档
+}
 ## 使用说明
 
 1. 克隆或下载本仓库到本地。
